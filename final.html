@@ -1,0 +1,5179 @@
+<html lang="en">
+	<head>
+		<script type="module" src="/@vite/client"></script>
+
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="app">
+			<table border="0">
+				<thead>
+					<tr>
+						<th>tag</th>
+						<th>attribute</th>
+						<th>example</th>
+						<th>output</th>
+					</tr>
+				</thead>
+
+				<tbody id="table-body">
+					<tr>
+						<td rowspan="10">a</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">a</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;a href&gt;this is new &lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;a&gt;Empty&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a href="tel:1234589123"&gt;1234589123&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a href="tel:1234589123"&gt;1234589123&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a href="mailto:info@google.com"&gt;&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;a&gt;this is a&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;a&gt;this is a&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;a&gt;this is a&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;a&gt;this is a&lt;/a&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><a href="">this is new </a></li>
+								<li><a>Empty</a></li>
+								<li><a href="tel:1234589123">1234589123</a></li>
+								<li><a href="tel:1234589123">1234589123</a></li>
+								<li><a href="mailto:info@google.com"></a></li>
+								<li><a>this is a</a></li>
+								<li><a>this is a</a></li>
+								<li><a>this is a</a></li>
+								<li><a>this is a</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">download</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a download href="https://minibase.deno.dev/avatar.png"&gt;Avatar&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a download="filename2.png" href="https://minibase.deno.dev/avatar.png"&gt;Avatar&lt;/a&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><a download="" href="https://minibase.deno.dev/avatar.png">Avatar</a></li>
+								<li>
+									<a download="filename2.png" href="https://minibase.deno.dev/avatar.png">Avatar</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">hreflang</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;a hreflang="en"&gt;hti&lt;/a&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><a hreflang="en">hti</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a href="https://ht-ex.vercel.app" type="text/html"&gt;HTML cheat sheet&lt;/a&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><a href="https://ht-ex.vercel.app" type="text/html">HTML cheat sheet</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">referrerpolicy</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p style=" display: inline " &gt;No-referrer : &lt;/p&gt;
+&lt;a  href="https://ht-ex.vercel.app"   referrerpolicy ="no-referrer"&gt;HTML cheat sheet   &lt;/a&gt;&lt;br&gt;
+&lt;p style=" display: inline " &gt;No-referrer-when-downgrade : &lt;/p&gt;
+&lt;a  href="https://ht-ex.vercel.app"   referrerpolicy ="no-referrer-when-downgrade "&gt;HTML cheat sheet   &lt;/a&gt;&lt;br&gt;
+
+</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p style="display: inline">No-referrer :</p>
+									<a href="https://ht-ex.vercel.app" referrerpolicy="no-referrer"
+										>HTML cheat sheet </a
+									><br />
+									<p style="display: inline">No-referrer-when-downgrade :</p>
+									<a href="https://ht-ex.vercel.app" referrerpolicy="no-referrer-when-downgrade "
+										>HTML cheat sheet </a
+									><br />
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">target</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;a target="_blank"&gt;open&lt;/a&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><a target="_blank">open</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rel</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a rel="bookmark" href="https://ht-ex.vercel.app "&gt;A link with bookmark value of rel attribute &lt;/a&gt; &lt;br&gt;
+&lt;a rel="help " href="https://ht-ex.vercel.app "&gt;A link with help value of rel attribute &lt;/a&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<a rel="bookmark" href="https://ht-ex.vercel.app "
+										>A link with bookmark value of rel attribute
+									</a>
+									<br />
+									<a rel="help " href="https://ht-ex.vercel.app "
+										>A link with help value of rel attribute
+									</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">ping</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a href="https://ht-ex.vercel.app" ping="https://www.google.com"&gt; Ping attribute &lt;/a&gt;
+</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<a href="https://ht-ex.vercel.app" ping="https://www.google.com">
+										Ping attribute
+									</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">href</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;a href="/"&gt;Home&lt;/a&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><a href="https://google.com">Google</a></li>
+								<li><a href="/">Home</a></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">abbr</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">abbr</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;abbr&gt;h&lt;/abbr&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><abbr>h</abbr></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">acronym</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">acronym</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>code</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>code</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">address</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">address</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;address&gt;
+For more information, contact:
+&lt;a href="https://ht-ex.vercel.app"&gt;HTML cheat sheet &lt;/a&gt;
+&lt;/address&gt;
+
+&lt;/address&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<address>
+										For more information, contact:
+										<a href="https://ht-ex.vercel.app">HTML cheat sheet </a>
+									</address>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="17">applet</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">applet</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">align</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">datasrc</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">mayscript</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">codebase</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">hspace</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">code</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">object</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">datafld</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">vspace</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">archive</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">alt</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="12">area</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">area</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">href</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">download</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">ping</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">alt</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rel</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">referrerpolicy</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">shape</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">coords</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">hreflang</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">target</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">article</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">article</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">aside</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">aside</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>aside</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>aside</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="10">audio</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">audio</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autoplay</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">preload</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">loop</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">crossorigin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">controls</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disableremoteplayback</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">muted</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">b</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">b</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;b&gt;bold text&lt;/b&gt;</code></pre>
+								</li>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;this is &lt;b&gt;bold&lt;/b&gt; text.&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><b>bold text</b></li>
+								<li>
+									<p>this is <b>bold</b> text.</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">base</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">base</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">target</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">href</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;base href="https://myapi.com/" target="_blank" /&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><base href="https://myapi.com/" target="_blank" /></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">basefont</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">basefont</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">size</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">color</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">face</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">bdi</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">bdi</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;bdi&gt;this text is bidirectional متن دو طرفه&lt;/bdi&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><bdi>this text is bidirectional متن دو طرفه</bdi></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">bdo</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">bdo</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">dir</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="6">bgsound</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">bgsound</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">balance</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">volume</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">loop</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">big</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">big</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">blink</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">blink</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">blockquote</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">blockquote</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">cite</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="30">body</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">body</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onbeforeprint</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onmessage</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">ononline</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onhashchange</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">leftmargin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onlanguagechange</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onoffline</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onblur</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">topmargin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">bgcolor</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onunload</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onfocus</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">alink</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">bottommargin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onpopstate</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">link</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onstorage</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">background</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onredo</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onundo</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onafterprint</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onload</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onerror</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onbeforeunload</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">onresize</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">text</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">vlink</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rightmargin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">br</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">br</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt; Hello world, &lt;br&gt; This is me AFGHANISTAN :(</code></pre>
+								</li>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt; Hello world, &lt;br&gt; This is new Line&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>
+										Hello world, <br />
+										This is me AFGHANISTAN :(
+									</p>
+								</li>
+								<li>
+									<p>
+										Hello world, <br />
+										This is new Line
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="14">button</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">button</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">value</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autocomplete</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autofocus</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formtarget</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formaction</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formnovalidate</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formenctype</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formmethod</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">canvas</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">canvas</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">moz-opaque</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">caption</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">caption</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">center</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">center</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">cite</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">cite</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">code</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">code</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;Here's the basic code for creating a table in HTML:&lt;/p&gt;
+&lt;code&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/code&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>Here's the basic code for creating a table in HTML:</p>
+									<code>
+										&lt;table&gt; &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt;
+										&lt;/table&gt;
+									</code>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">col</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">col</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">span</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">colgroup</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">colgroup</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">span</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">content</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">content</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">select</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">data</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">data</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">value</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">datalist</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">datalist</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">dd</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">dd</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;dl&gt;
+&lt;dt&gt;title:&lt;/dt&gt;
+&lt;dd&gt;this is description&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<dl>
+										<dt>title:</dt>
+										<dd>this is description</dd>
+									</dl>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">nowrap</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;dl&gt;
+&lt;dt&gt;title&lt;/dt&gt;
+&lt;dd nowrap="yes"&gt;this is description witn no wrap attribute&lt;/dd&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<dl>
+										<dt>title</dt>
+										<dd nowrap="yes">this is description witn no wrap attribute</dd>
+									</dl>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">del</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">del</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">cite</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">datetime</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">details</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">details</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;details&gt;
+&lt;summary&gt;Click to Expand&lt;/summary&gt;
+&lt;p&gt;If your browser supports this element, it should allow you to expand and collapse these details.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<details>
+										<summary>Click to Expand</summary>
+										<p>
+											If your browser supports this element, it should allow you to expand and
+											collapse these details.
+										</p>
+									</details>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">open</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;details open&gt;
+&lt;summary&gt;Click to Expand&lt;/summary&gt;
+&lt;p&gt;If your browser supports this element, it should allow you to expand and collapse these details.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<details open="">
+										<summary>Click to Expand</summary>
+										<p>
+											If your browser supports this element, it should allow you to expand and
+											collapse these details.
+										</p>
+									</details>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">dfn</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">dfn</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">dialog</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">dialog</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">open</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">dir</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">dir</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">compact</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">div</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">div</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">dl</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">dl</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">dt</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">dt</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">em</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">em</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="6">embed</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">embed</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">fieldset</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">fieldset</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">figcaption</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">figcaption</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">figure</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">figure</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">font</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">font</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">face</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">color</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;font color="red"&gt;Font&lt;/font&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><font color="red">Font</font></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">size</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">footer</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">footer</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;footer&gt;
+				Footer content...
+&lt;/footer&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><footer>Footer content...</footer></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="8">form</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rel</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">accept-charset</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autocapitalize</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">accept</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autocomplete</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="9">frame</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">frame</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">marginwidth</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">frameborder</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">marginheight</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">noresize</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">scrolling</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">frameset</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">frameset</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">cols</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rows</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">head</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">head</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">profile</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">header</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">header</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Heading_Elements</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">Heading_Elements</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">hgroup</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">hgroup</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="7">hr</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">hr</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">noshade</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">color</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">size</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">align</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">html</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">html</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">xmlns</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">version</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">manifest</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">i</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">i</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="15">iframe</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">iframe</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">allowpaymentrequest</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">allowfullscreen</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">sandbox</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">srcdoc</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">csp</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">allow</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">loading</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">fetchpriority</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">referrerpolicy</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">image</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">image</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="15">img</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">img</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">referrerpolicy</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">ismap</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">crossorigin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">usemap</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">loading</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">fetchpriority</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">srcset</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">sizes</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">decoding</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">alt</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="56">input</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">input</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input/&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">button</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="button" value="this is button" /&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="button" value="this is button" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">checkbox</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;lable&gt;this is lable
+&lt;input type="checkbox" name="checkbox"&gt;
+&lt;/lable&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<lable
+										>this is lable
+										<input type="checkbox" name="checkbox" />
+									</lable>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">color</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="color" name="color"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="color" name="color" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">date</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="date" name="date"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="date" name="date" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">datetime-local</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="datetime-local" name="datetime-local"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="datetime-local" name="datetime-local" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">email</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="email" name="email"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="email" name="email" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">file</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="file" accept="image/*, text/*" name="file"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="file" accept="image/*, text/*" name="file" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">hidden</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input id="userId" name="userId" type="hidden" value="abc123"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input id="userId" name="userId" type="hidden" value="abc123" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">image</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="image" name="image" src="data:image/jpeg;base64,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" alt="image input"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<input
+										type="image"
+										name="image"
+										src="data:image/jpeg;base64,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"
+										alt="image input"
+									/>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">month</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="month" name="month"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="month" name="month" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">number</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="number" name="number"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="number" name="number" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">password</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="password" name="password"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="password" name="password" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">radio</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="radio" name="radio"&gt;
+&lt;input type="radio" name="radio"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="radio" name="radio" /> <input type="radio" name="radio" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">range</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="range" name="range" min="0" max="25"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="range" name="range" min="0" max="25" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">reset</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="reset" name="reset"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="reset" name="reset" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">search</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="search" name="search"&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;input type="submit" name="submit"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="search" name="search" /></li>
+								<li><input type="submit" name="submit" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">submit</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="submit" name="submit"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="submit" name="submit" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">tel</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="tel" name="tel"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="tel" name="tel" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">text</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="text" name="text"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="text" name="text" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">time</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="time" name="time"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="time" name="time" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">url</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="url" name="url"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="url" name="url" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">week</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;input type="week" name="week"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="week" name="week" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">datetime</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="datetime" name="datetime"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="datetime" name="datetime" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">accept</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="file" accept="image/*, text/*" name="file"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="file" accept="image/*, text/*" name="file" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">alt</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autocomplete</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">capture</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">checked</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">dirname</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formaction</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formenctype</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formmethod</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formnovalidate</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">formtarget</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">list</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">max</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">maxlength</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">min</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">minlength</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">multiple</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">pattern</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">placeholder</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">readonly</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="text" value="text" readonly name="file"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="text" value="text" readonly="" name="file" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">required</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="file" accept="image/*, text/*" name="file" required&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="file" accept="image/*, text/*" name="file" required="" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">size</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">step</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;input type="file" accept="image/*, text/*" name="file"&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><input type="file" accept="image/*, text/*" name="file" /></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">value</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">ins</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">ins</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">cite</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">datetime</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">kbd</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">kbd</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="8">keygen</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">keygen</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autofocus</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">challenge</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">keytype</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">label</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">label</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">for</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">legend</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">legend</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">li</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">li</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">value</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="18">link</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">link</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rel</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">sizes</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">hreflang</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">as</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">referrerpolicy</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">imagesizes</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">title</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">media</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">prefetch Secure context</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">crossorigin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">fetchpriority</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">integrity</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">imagesrcset</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">href</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">main</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">main</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">map</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">map</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">mark</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">mark</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="13">marquee</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">marquee</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">scrollamount</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">direction</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">bgcolor</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">scrolldelay</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">loop</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">behavior</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">vspace</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">truespeed</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">hspace</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">menu</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">menu</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="10">menuitem</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">menuitem</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">checked</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">default</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">label</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">command</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">radiogroup</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">icon</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="6">meta</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">meta</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">http-equiv</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">content</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">charset</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="8">meter</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">meter</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">high</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">min</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">optimum</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">value</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">low</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">max</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">nav</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">nav</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">nobr</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">nobr</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">noembed</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">noembed</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">noframes</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">noframes</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">noscript</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">noscript</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="16">object</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">object</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">declare</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">archive</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">usemap</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">border</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">codebase</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">data</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">standby</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">classid</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">codetype</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">ol</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">ol</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">reversed</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">start</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">optgroup</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">optgroup</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">label</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="6">option</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">option</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">value</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">selected</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">label</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">output</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">output</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">for</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">p</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">p</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;p&gt;this is a p&lt;/p</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><p>this is a p</p></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="6">param</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">param</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">valuetype</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">value</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">picture</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">picture</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">plaintext</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">plaintext</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">portal</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">portal</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">referrerpolicy</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">pre</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">pre</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">wrap</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">cols</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">progress</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">progress</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">max</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">value</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">q</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">q</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>
+&lt;p&gt;WWF's goal is to: 
+&lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;
+We hope they succeed.&lt;/p&gt;
+</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>
+										WWF's goal is to:
+										<q>Build a future where people live in harmony with nature.</q>
+										We hope they succeed.
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">cite</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;&lt;cite&gt;Sean Stephenson&lt;/cite&gt; said &lt;q cite="http://seanstephenson.com/"&gt;You'll always have an ego. The moment you forget that, it will start running the show&lt;/q&gt; and I tend to agree.&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>
+										<cite>Sean Stephenson</cite> said
+										<q cite="http://seanstephenson.com/"
+											>You'll always have an ego. The moment you forget that, it will start running
+											the show</q
+										>
+										and I tend to agree.
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">rb</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rb</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;ruby&gt;東
+ &lt;rb&gt;京&lt;/rb&gt;
+ &lt;rt&gt;とう&lt;/rt&gt;
+ &lt;rt&gt;きょう&lt;/rt&gt;
+&lt;/ruby&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<ruby
+										>東
+										<rb>京</rb>
+										<rt>とう</rt>
+										<rt>きょう</rt>
+									</ruby>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">rp</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rp</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;p lang="ja"&gt;... 
+&lt;ruby&gt;
+ 漢 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;かん&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+ 字 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;じ&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+&lt;/ruby&gt;
+...&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p lang="ja">
+										...
+										<ruby>
+											漢 <rp>(</rp><rt>かん</rt><rp>)</rp> 字 <rp>(</rp><rt>じ</rt><rp>)</rp>
+										</ruby>
+										...
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">rt</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rt</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;p lang="zh-CN"&gt;...
+&lt;ruby&gt;
+ 汉 &lt;rt&gt; hàn &lt;/rt&gt;
+ 字 &lt;rt&gt; zì&nbsp; &lt;/rt&gt;
+&lt;/ruby&gt;
+...&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p lang="zh-CN">
+										...
+										<ruby> 汉 <rt> hàn </rt> 字 <rt> zì&nbsp; </rt> </ruby>
+										...
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">rtc</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rtc</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;ruby&gt;
+  &lt;rb&gt;♥&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Heart&lt;/rt&gt;&lt;/rtc&gt;&lt;rtc lang=fr&gt;&lt;rt&gt;Cœur&lt;/rt&gt;&lt;/rtc&gt;
+  &lt;rb&gt;☘&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Shamrock&lt;/rt&gt;&lt;/rtc&gt;&lt;rtc lang=fr&gt;&lt;rt&gt;Trèfle&lt;/rt&gt;&lt;/rtc&gt;
+  &lt;rb&gt;✶&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Star&lt;/rt&gt;&lt;/rtc&gt;&lt;rtc lang=fr&gt;&lt;rt&gt;Étoile&lt;/rt&gt;&lt;/rtc&gt;
+&lt;/ruby&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<ruby>
+										<rb>♥</rb><rtc><rt>Heart</rt></rtc
+										><rtc lang="fr"><rt>Cœur</rt></rtc> <rb>☘</rb><rtc><rt>Shamrock</rt></rtc
+										><rtc lang="fr"><rt>Trèfle</rt></rtc> <rb>✶</rb><rtc><rt>Star</rt></rtc
+										><rtc lang="fr"><rt>Étoile</rt></rtc>
+									</ruby>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">ruby</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">ruby</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;p lang="zh-CN"&gt;...
+&lt;ruby&gt;
+ 汉 &lt;rt&gt; hàn &lt;/rt&gt;
+ 字 &lt;rt&gt; zì&nbsp; &lt;/rt&gt;
+&lt;/ruby&gt;
+...&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p lang="zh-CN">
+										...
+										<ruby> 汉 <rt> hàn </rt> 字 <rt> zì&nbsp; </rt> </ruby>
+										...
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">s</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">s</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;Great coffee from just &lt;s&gt;$50&lt;/s&gt; $20!&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>Great coffee from just <s>$50</s> $20!</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">samp</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">samp</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;My computer says &lt;samp&gt;Good Morning!&lt;/samp&gt; every time I start it... amazing!&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>
+										My computer says <samp>Good Morning!</samp> every time I start it... amazing!
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="12">script</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">script</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;script&gt;&lt;/script&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><script></script></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">async</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">integrity</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">defer</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;script defer src="/app.js"&gt;&lt;/script&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><script defer="" src="/app.js"></script></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">crossorigin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;script src="this is source"&gt;&lt;/script&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><script src="this is source"></script></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">nomodule</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">referrerpolicy</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">fetchpriority</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">nonce</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">section</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">section</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;section&gt;this is section &lt;/section&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><section>this is section</section></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="10">select</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">select</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">size</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">required</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">multiple</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autocomplete</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autofocus</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">shadow</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">shadow</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">slot</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">slot</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;!-- 1. Template --&gt;
+&lt;template&gt;
+    &lt;h1&gt;&lt;slot name="heading"&gt;&lt;/slot&gt;&lt;/h1&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;&lt;slot name="term-1"&gt;&lt;/slot&gt;&lt;/dt&gt;
+        &lt;dd&gt;&lt;slot name="description-1"&gt;&lt;/slot&gt;&lt;/dd&gt;
+        &lt;dt&gt;&lt;slot name="term-2"&gt;&lt;/slot&gt;&lt;/dt&gt;
+        &lt;dd&gt;&lt;slot name="description-2"&gt;&lt;/slot&gt;&lt;/dd&gt;
+        &lt;dt&gt;&lt;slot name="term-3"&gt;&lt;/slot&gt;&lt;/dt&gt;
+        &lt;dd&gt;&lt;slot name="description-3"&gt;&lt;/slot&gt;&lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;style&gt;
+        h1 { 
+            font-size: 1.2em;
+            font-family: sans-serif;
+            color: darkorange;
+            }
+        dl { 
+            border-left: 3px solid darkorange; 
+            padding-left: 1em; }
+        dt { font-weight: bold; }
+        dd { color: darkslategray; }
+    &lt;/style&gt;
+&lt;/template&gt;
+
+&lt;!-- 2. Content --&gt;
+&lt;div&gt;
+    &lt;span slot="heading"&gt;Web Terms&lt;/span&gt;
+    &lt;span slot="term-1"&gt;HTML&lt;/span&gt;
+    &lt;span slot="description-1"&gt;HyperText Markup Language&lt;/span&gt;
+    &lt;span slot="term-2"&gt;CSS&lt;/span&gt;
+    &lt;span slot="description-2"&gt;Cascading Style Sheets&lt;/span&gt;
+    &lt;span slot="term-3"&gt;SQL&lt;/span&gt;
+    &lt;span slot="description-3"&gt;Structured Query Language&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;span slot="heading"&gt;Medical Terms&lt;/span&gt;
+    &lt;span slot="term-1"&gt;AF&lt;/span&gt;
+    &lt;span slot="description-1"&gt;Atrial Fibrillation&lt;/span&gt;
+    &lt;span slot="term-3"&gt;CPR&lt;/span&gt;
+    &lt;span slot="description-3"&gt;Cardiopulmonary Resuscitation&lt;/span&gt;
+    &lt;span slot="term-2"&gt;PAH&lt;/span&gt;
+    &lt;span slot="description-2"&gt;Pulmonary Arterial Hypertension&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- 3. Script --&gt;
+&lt;script&gt;
+  var dlTemplate = document.querySelector('template').content;
+  var divs = document.querySelectorAll('div');
+ 
+  divs.forEach(function(div){
+    div.attachShadow({  mode: 'open' }).appendChild(
+        dlTemplate.cloneNode(true))
+  });
+&lt;/script&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<!-- 1. Template -->
+									<template>
+										<h1><slot name="heading"></slot></h1>
+										<dl>
+											<dt><slot name="term-1"></slot></dt>
+											<dd><slot name="description-1"></slot></dd>
+											<dt><slot name="term-2"></slot></dt>
+											<dd><slot name="description-2"></slot></dd>
+											<dt><slot name="term-3"></slot></dt>
+											<dd><slot name="description-3"></slot></dd>
+										</dl>
+										<style>
+											h1 {
+												font-size: 1.2em;
+												font-family: sans-serif;
+												color: darkorange;
+											}
+											dl {
+												border-left: 3px solid darkorange;
+												padding-left: 1em;
+											}
+											dt {
+												font-weight: bold;
+											}
+											dd {
+												color: darkslategray;
+											}
+										</style>
+									</template>
+
+									<!-- 2. Content -->
+									<div>
+										<span slot="heading">Web Terms</span>
+										<span slot="term-1">HTML</span>
+										<span slot="description-1">HyperText Markup Language</span>
+										<span slot="term-2">CSS</span>
+										<span slot="description-2">Cascading Style Sheets</span>
+										<span slot="term-3">SQL</span>
+										<span slot="description-3">Structured Query Language</span>
+									</div>
+									<div>
+										<span slot="heading">Medical Terms</span>
+										<span slot="term-1">AF</span>
+										<span slot="description-1">Atrial Fibrillation</span>
+										<span slot="term-3">CPR</span>
+										<span slot="description-3">Cardiopulmonary Resuscitation</span>
+										<span slot="term-2">PAH</span>
+										<span slot="description-2">Pulmonary Arterial Hypertension</span>
+									</div>
+
+									<!-- 3. Script -->
+									<script>
+										var dlTemplate = document.querySelector('template').content;
+										var divs = document.querySelectorAll('div');
+
+										divs.forEach(function (div) {
+											div.attachShadow({ mode: 'open' }).appendChild(dlTemplate.cloneNode(true));
+										});
+									</script>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>
+&lt;template&gt;
+    &lt;h1&gt;&lt;slot name="heading"&gt;&lt;/slot&gt;&lt;/h1&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;&lt;slot name="term-1"&gt;&lt;/slot&gt;&lt;/dt&gt;
+        &lt;dd&gt;&lt;slot name="description-1"&gt;&lt;/slot&gt;&lt;/dd&gt;
+        &lt;dt&gt;&lt;slot name="term-2"&gt;&lt;/slot&gt;&lt;/dt&gt;
+        &lt;dd&gt;&lt;slot name="description-2"&gt;&lt;/slot&gt;&lt;/dd&gt;
+        &lt;dt&gt;&lt;slot name="term-3"&gt;&lt;/slot&gt;&lt;/dt&gt;
+        &lt;dd&gt;&lt;slot name="description-3"&gt;&lt;/slot&gt;&lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;style&gt;
+        h1 { 
+            font-size: 1.2em;
+            font-family: sans-serif;
+            color: darkorange;
+            }
+        dl { 
+            border-left: 3px solid darkorange; 
+            padding-left: 1em; }
+        dt { font-weight: bold; }
+        dd { color: darkslategray; }
+    &lt;/style&gt;
+&lt;/template&gt;
+
+&lt;!-- 2. Content --&gt;
+&lt;div&gt;
+    &lt;span slot="heading"&gt;Web Terms&lt;/span&gt;
+    &lt;span slot="term-1"&gt;HTML&lt;/span&gt;
+    &lt;span slot="description-1"&gt;HyperText Markup Language&lt;/span&gt;
+    &lt;span slot="term-2"&gt;CSS&lt;/span&gt;
+    &lt;span slot="description-2"&gt;Cascading Style Sheets&lt;/span&gt;
+    &lt;span slot="term-3"&gt;SQL&lt;/span&gt;
+    &lt;span slot="description-3"&gt;Structured Query Language&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;span slot="heading"&gt;Medical Terms&lt;/span&gt;
+    &lt;span slot="term-1"&gt;AF&lt;/span&gt;
+    &lt;span slot="description-1"&gt;Atrial Fibrillation&lt;/span&gt;
+    &lt;span slot="term-3"&gt;CPR&lt;/span&gt;
+    &lt;span slot="description-3"&gt;Cardiopulmonary Resuscitation&lt;/span&gt;
+    &lt;span slot="term-2"&gt;PAH&lt;/span&gt;
+    &lt;span slot="description-2"&gt;Pulmonary Arterial Hypertension&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- 3. Script --&gt;
+&lt;script&gt;
+  var dlTemplate = document.querySelector('template').content;
+  var divs = document.querySelectorAll('div');
+ 
+  divs.forEach(function(div){
+    div.attachShadow({  mode: 'open' }).appendChild(
+        dlTemplate.cloneNode(true))
+  });
+&lt;/script&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<template>
+										<h1><slot name="heading"></slot></h1>
+										<dl>
+											<dt><slot name="term-1"></slot></dt>
+											<dd><slot name="description-1"></slot></dd>
+											<dt><slot name="term-2"></slot></dt>
+											<dd><slot name="description-2"></slot></dd>
+											<dt><slot name="term-3"></slot></dt>
+											<dd><slot name="description-3"></slot></dd>
+										</dl>
+										<style>
+											h1 {
+												font-size: 1.2em;
+												font-family: sans-serif;
+												color: darkorange;
+											}
+											dl {
+												border-left: 3px solid darkorange;
+												padding-left: 1em;
+											}
+											dt {
+												font-weight: bold;
+											}
+											dd {
+												color: darkslategray;
+											}
+										</style>
+									</template>
+
+									<!-- 2. Content -->
+									<div>
+										<span slot="heading">Web Terms</span>
+										<span slot="term-1">HTML</span>
+										<span slot="description-1">HyperText Markup Language</span>
+										<span slot="term-2">CSS</span>
+										<span slot="description-2">Cascading Style Sheets</span>
+										<span slot="term-3">SQL</span>
+										<span slot="description-3">Structured Query Language</span>
+									</div>
+									<div>
+										<span slot="heading">Medical Terms</span>
+										<span slot="term-1">AF</span>
+										<span slot="description-1">Atrial Fibrillation</span>
+										<span slot="term-3">CPR</span>
+										<span slot="description-3">Cardiopulmonary Resuscitation</span>
+										<span slot="term-2">PAH</span>
+										<span slot="description-2">Pulmonary Arterial Hypertension</span>
+									</div>
+
+									<!-- 3. Script -->
+									<script>
+										var dlTemplate = document.querySelector('template').content;
+										var divs = document.querySelectorAll('div');
+
+										divs.forEach(function (div) {
+											div.attachShadow({ mode: 'open' }).appendChild(dlTemplate.cloneNode(true));
+										});
+									</script>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">small</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">small</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;Beer, half price! &lt;small&gt;(as long as you tip us the other half)&lt;/small&gt;&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>Beer, half price! <small>(as long as you tip us the other half)</small></p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="9">source</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">source</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">srcset</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">media</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">sizes</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="7">spacer</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">spacer</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">size</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">align</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">span</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">span</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;blockquote style="font-size:larger;"&gt;If someone tells you, &lt;span style="color:green;"&gt;"You can't"&lt;/span&gt; they really mean, &lt;span style="color:red;"&gt;"I can't"&lt;/span&gt;.&lt;/blockquote&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<blockquote style="font-size: larger">
+										If someone tells you, <span style="color: green">"You can't"</span> they really
+										mean, <span style="color: red">"I can't"</span>.
+									</blockquote>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">strike</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">strike</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;strike&gt; The HTML element places a strikethrough (horizontal line) over text. &lt;/strike&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<strike>
+										The HTML element places a strikethrough (horizontal line) over text.
+									</strike>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">strong</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">strong</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;The most important thing to remember is, &lt;strong&gt;stay positive&lt;/strong&gt;. Apart from that you can do anything you like.&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>
+										The most important thing to remember is, <strong>stay positive</strong>. Apart
+										from that you can do anything you like.
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">style</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">style</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">nonce</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">title</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">media</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">sub</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">sub</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>E = mc&lt;sup&gt;2&lt;/sup&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>E = mc<sup>2</sup></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">summary</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">summary</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;details&gt;
+&lt;summary&gt;Click to Expand&lt;/summary&gt;
+&lt;p&gt;If your browser supports this element, it should allow you to expand and collapse these details.&lt;/p&gt;
+&lt;/details</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<details>
+										<summary>Click to Expand</summary>
+										<p>
+											If your browser supports this element, it should allow you to expand and
+											collapse these details.
+										</p>
+									</details>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">sup</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">sup</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>H<sub>2</sub>O</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">table</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">table</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;table&gt;
+ &lt;tr&gt;
+  &lt;th&gt;Table Header 1&lt;/th&gt;
+  &lt;th&gt;Table Header 2&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;Cell 1&lt;/td&gt;
+  &lt;td&gt;Cell 2&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;Cell 3&lt;/td&gt;
+  &lt;td&gt;Cell 4&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<table>
+										<tbody>
+											<tr>
+												<th>Table Header 1</th>
+												<th>Table Header 2</th>
+											</tr>
+											<tr>
+												<td>Cell 1</td>
+												<td>Cell 2</td>
+											</tr>
+											<tr>
+												<td>Cell 3</td>
+												<td>Cell 4</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">tbody</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">tbody</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;table&gt;
+	&lt;thead&gt;
+	     &lt;tr&gt;&lt;th&gt;Table Header&lt;/th&gt;&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Cell 1 - part of tbody&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Cell 2 - part of tbody&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Cell 3 - part of tbody&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<table>
+										<thead>
+											<tr>
+												<th>Table Header</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Cell 1 - part of tbody</td>
+											</tr>
+											<tr>
+												<td>Cell 2 - part of tbody</td>
+											</tr>
+											<tr>
+												<td>Cell 3 - part of tbody</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">td</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">td</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rowspan</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">headers</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">colspan</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">template</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">template</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;!-- Template Content --&gt;
+&lt;template id="myTemplate"&gt;
+&lt;p&gt;Template content. Click again...&lt;/p&gt;
+&lt;/template&gt;
+
+&lt;!-- Normal Content --&gt;
+&lt;div id="normalContent"&gt;
+&lt;p&gt;Normal content&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- JavaScript function: Clones the template and appends it to the normal content --&gt;
+&lt;button onclick="useTemplate();"&gt;Use Template!&lt;/button&gt;
+&lt;script&gt;
+function useTemplate() {
+var myTemplate = document.getElementById('myTemplate'),
+    normalContent = document.getElementById('normalContent'),
+    clonedTemplate = myTemplate.content.cloneNode(true);
+    normalContent.appendChild(clonedTemplate);
+    }
+&lt;/script&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<!-- Template Content -->
+									<template id="myTemplate">
+										<p>Template content. Click again...</p>
+									</template>
+
+									<!-- Normal Content -->
+									<div id="normalContent">
+										<p>Normal content</p>
+									</div>
+
+									<!-- JavaScript function: Clones the template and appends it to the normal content -->
+									<button onclick="useTemplate();">Use Template!</button>
+									<script>
+										function useTemplate() {
+											var myTemplate = document.getElementById('myTemplate'),
+												normalContent = document.getElementById('normalContent'),
+												clonedTemplate = myTemplate.content.cloneNode(true);
+											normalContent.appendChild(clonedTemplate);
+										}
+									</script>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="17">textarea</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">textarea</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;textarea&gt;this is content&lt;/textarea&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><textarea>this is content</textarea></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">maxlength</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">name</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;textarea name="text-area"&gt;this is content with name&lt;/textarea&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><textarea name="text-area">this is content with name</textarea></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">placeholder</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;textarea placeholder="type something..."&gt;&lt;/textarea&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><textarea placeholder="type something..."></textarea></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autofocus</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disabled</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">wrap</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">readonly</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;textarea readonly&gt;You cannot change me&lt;/textarea&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><textarea readonly="">You cannot change me</textarea></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">minlength</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rows</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autocomplete</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">required</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">form</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autocorrect</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">spellcheck</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">cols</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">tfoot</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">tfoot</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;table&gt;
+	&lt;thead&gt;
+	     &lt;tr&gt;&lt;th&gt;Table Header&lt;/th&gt;&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Cell 1 - part of tbody&lt;/td&gt;
+		&lt;/tr&gt;	
+	&lt;/tbody&gt;
+	&lt;tfoot&gt;
+	     &lt;tr&gt;&lt;th&gt;Table Footer&lt;/th&gt;&lt;/tr&gt;
+	&lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<table>
+										<thead>
+											<tr>
+												<th>Table Header</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Cell 1 - part of tbody</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Table Footer</th>
+											</tr>
+										</tfoot>
+									</table>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="7">th</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">th</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;th&gt;this is th&lt;/th&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li></li>
+							</ul>
+						</td>
+						<th>this is th</th>
+					</tr>
+					<tr>
+						<td class="col-attr-name">colspan</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;th colspan="2" &gt;th&lt;/th&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li></li>
+							</ul>
+						</td>
+						<th colspan="2">th</th>
+					</tr>
+					<tr>
+						<td class="col-attr-name">abbr</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">rowspan</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">scope</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">headers</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">thead</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">thead</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;table&gt;
+	&lt;thead&gt;
+	     &lt;tr&gt;&lt;th&gt;Table Header&lt;/th&gt;&lt;/tr&gt;
+	&lt;/thead&gt;
+&lt;/table&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<table>
+										<thead>
+											<tr>
+												<th>Table Header</th>
+											</tr>
+										</thead>
+									</table>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">time</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">time</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;On Saturdays, we open at &lt;time&gt;09:00&lt;/time&gt;.&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>On Saturdays, we open at <time>09:00</time>.</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">datetime</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;I will be free &lt;time datetime="2022-06-14 20:00"&gt;Sundays&lt;/time&gt;.&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>I will be free <time datetime="2022-06-14 20:00">Sundays</time>.</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">title</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">title</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;title&gt;this is page title&lt;/title&gt;
+</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li><title>this is page title</title></li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">tr</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">tr</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;tr&gt;
+&lt;td&gt;this is td inside a tr&lt;/td&gt;
+&lt;td&gt;another td&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>this is td inside a tr</td>
+						<td>another td</td>
+					</tr>
+
+					<tr>
+						<td rowspan="7">track</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">track</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;video src="video.ogg" controls&gt;
+	&lt;track src="text-track.vtt" label="English"&gt;
+&lt;/video&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<video src="video.ogg" controls="">
+										<track src="text-track.vtt" label="English" />
+									</video>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">kind</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;video src="video.ogg" controls&gt;
+	&lt;track src="text-track.vtt" kind="subtitles"&gt;
+&lt;/video&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<video src="video.ogg" controls="">
+										<track src="text-track.vtt" kind="subtitles" />
+									</video>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">label</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;video src="video.ogg" controls&gt;
+	&lt;track src="text-track.vtt" label="English"&gt;
+&lt;/video&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<video src="video.ogg" controls="">
+										<track src="text-track.vtt" label="English" />
+									</video>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">srclang</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;video src="video.ogg" controls&gt;
+	&lt;track src="text-track.vtt" srclang="en"&gt;
+&lt;/video&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<video src="video.ogg" controls="">
+										<track src="text-track.vtt" srclang="en" />
+									</video>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;video src="video.ogg" controls&gt;
+	&lt;track src="text-track.vtt"&gt;
+&lt;/video&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<video src="video.ogg" controls="">
+										<track src="text-track.vtt" />
+									</video>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">default</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;video src="video.ogg" controls&gt;
+	&lt;track src="text-track.vtt" kind="subtitles" srclang="en" label="English" default&gt;
+&lt;/video&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<video src="video.ogg" controls="">
+										<track
+											src="text-track.vtt"
+											kind="subtitles"
+											srclang="en"
+											label="English"
+											default=""
+										/>
+									</video>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">tt</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">tt</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;Enter the following at the telnet command prompt: &lt;code&gt;set localecho&lt;/code&gt;&lt;br /&gt;
+The telnet client should display: &lt;tt&gt;Local Echo is on&lt;/tt&gt;&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>
+										Enter the following at the telnet command prompt: <code>set localecho</code
+										><br />
+										The telnet client should display: <tt>Local Echo is on</tt>
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">u</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">u</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;It is very easy to &lt;u&gt;mispell&lt;/u&gt; the word "misspell".&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>It is very easy to <u>mispell</u> the word "misspell".</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">ul</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">ul</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;ul&gt;
+&lt;li&gt;Cats&lt;/li&gt;
+&lt;li&gt;Dogs&lt;/li&gt;
+&lt;li&gt;Birds&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;ul&gt;
+	&lt;li&gt;List item...&lt;/li&gt;
+	&lt;li&gt;List item...&lt;/li&gt;
+	&lt;li&gt;List item...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+								</li>
+								<li>
+									<pre class="reset"><code>&lt;ul&gt;
+&lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<ul>
+										<li>Cats</li>
+										<li>Dogs</li>
+										<li>Birds</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>List item...</li>
+										<li>List item...</li>
+										<li>List item...</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>Item</li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">compact</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;ul compact=“true”&gt;
+&lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<ul compact="“true”">
+										<li>Item</li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">type</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;ul type=“square”&gt;
+&lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<ul type="“square”">
+										<li>Item</li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">var</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">var</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;You know, it occurred to me the other day that &lt;var&gt;E&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt; &lt;var&gt;c&lt;/var&gt;&lt;sup&gt;2&lt;/sup&gt;. I wonder why nobody has ever thought about this before.&lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>
+										You know, it occurred to me the other day that <var>E</var> = <var>m</var>
+										<var>c</var><sup>2</sup>. I wonder why nobody has ever thought about this
+										before.
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="17">video</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">video</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<video width="320" height="240" controls="">
+										<source src="movie.mp4" type="video/mp4" />
+										<source src="movie.ogg" type="video/ogg" />
+										Your browser does not support the video tag.
+									</video>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">muted</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">preload</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disableremoteplayback</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">height</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">src</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code>&lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<video width="320" height="240" controls="">
+										<source src="movie.mp4" type="video/mp4" />
+										<source src="movie.ogg" type="video/ogg" />
+										Your browser does not support the video tag.
+									</video>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">width</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">loop</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">crossorigin</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autoplay</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">poster</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">controlslist</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">controls</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">autopictureinpicture</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">disablepictureinpicture</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">playsinline</td>
+						<td class="col-attr-code"><ul></ul></td>
+						<td class="col-attr-example"><ul></ul></td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">wbr</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">wbr</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre
+										class="reset"
+									><code>&lt;p&gt;Example of a long string of text with wbr.&lt;/p&gt;
+    &lt;p&gt;This is the longest word you can ever meet in the English language pneumono&lt;wbr&gt;ultra&lt;wbr&gt;micro&lt;wbr&gt;scopic&lt;wbr&gt;silico&lt;wbr&gt;volcano&lt;wbr&gt;coniosis&lt;/p&gt;
+    &lt;/p&gt;</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<p>Example of a long string of text with wbr.</p>
+									<p>
+										This is the longest word you can ever meet in the English language pneumono<wbr />ultra<wbr />micro<wbr />scopic<wbr />silico<wbr />volcano<wbr />coniosis
+									</p>
+									<p></p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">xmp</td>
+					</tr>
+					<tr>
+						<td class="col-attr-name">xmp</td>
+						<td class="col-attr-code">
+							<ul>
+								<li>
+									<pre class="reset"><code> &lt;xmp&gt; This is a preformatted text.
+      All characters in this area have the same width,
+      and the spaces and line breaks within this element are shown as typed.
+    &lt;/xmp&gt;
+</code></pre>
+								</li>
+							</ul>
+						</td>
+						<td class="col-attr-example">
+							<ul>
+								<li>
+									<xmp
+> This is a preformatted text.
+      All characters in this area have the same width,
+      and the spaces and line breaks within this element are shown as typed.
+    </xmp
+									>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="module" src="/main.js?t=1655753246495"></script>
+	</body>
+</html>
